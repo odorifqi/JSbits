@@ -1,0 +1,57 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <h1>Odo's Bike</h1>
+    <div>
+        <h3>Blue Bike</h3>
+        <button onclick="show('blue')">details</button>
+        <button onclick="cart('blue')">add to cart</button>
+        <h3>White Bike</h3>
+        <button onclick="show('white')">details</button>
+        <button onclick="cart('white')">add to cart</button>
+        <h3>Black Bike</h3>
+        <button onclick="show('black')">details</button>
+        <button onclick="cart('black')">add to cart</button>
+    </div>
+
+    <div id="blueDetail" class="hidden detail">
+        <p>Awesome blue bike</p>
+    </div>
+
+    <div id="whiteDetail" class="hidden detail">
+        <p>Awesome white bike</p>
+    </div>
+
+    <div id="blackDetail" class="hidden detail">
+        <p>Awesome black bike</p>
+    </div>
+
+    <div id="hideBtn" class="hidden">
+        <button onclick="hideAll()">hide</button>
+    </div>
+
+    <div>
+        <p id="cartInfo"></p>
+        <p id="subTotal"></p>
+        <button onclick="showCheckout()">Checkout</button>
+    </div>
+
+
+
+    <form id="myForm" class="hidden" onsubmit="submitForm()">
+        <label for="name">name</label>
+        <input type="text" name="name" id="name"><br>
+        <label for="address">address</label>
+        <input type="text" name="address" id="address"><br>
+        <label for="name">Credit card Number</label>
+        <input type="text" name="creditNum" id="creditNum"><br>
+        <input type="submit" value="submit">
+    </form>
+</body>
+
+</html>
