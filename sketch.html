@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <script src="scriptGetah.js"></script>
+</head>
+
+<body>
+    <div class="intro">
+        <h2>Hasil Timbang</h2>
+        <form action="">
+            <label for="">H</label>
+            <input type="text" name="value" id="inputH">
+            <button type="button" onclick="sum('inputH', 'h')">submit</button>
+            <p id="h"></p>
+            <br>
+            <label for="">L</label>
+            <input type="text" name="value" id="inputL">
+            <button type="button" onclick="sum('inputL', 'l')">submit</button>
+            <p id="l"></p>
+            <br>
+            <label for="">M</label>
+            <input type="text" name="value" id="inputM">
+            <button type="button" onclick="sum('inputM', 'm')">submit</button>
+            <p id="m"></p>
+        </form>
+
+        <p id="demo"></p>
+
+        <h2>total</h2>
+        <button type="button" onclick="total()">total</button>
+        <p id="total"></p>
+    </div>
+</body>
+
+</html>
