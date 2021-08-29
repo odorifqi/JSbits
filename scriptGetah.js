@@ -1,8 +1,8 @@
 function sum(obj, obj2) {
     let input = document.getElementById(obj).value;
-    let inputArr = input.split(",")
+    const inputArr = input.split(",")
 
-    let arrint = []
+    const arrint = []
     inputArr.forEach((i) => {
         arrint.push(parseInt(i))
     });
@@ -29,11 +29,17 @@ function total() {
     }
 }
 
-
 function factorial(f) {
     let val = 1
-    for (let i = 1; i < (f); i++) {
+    for (let i = 1; i < f; i++) {
         val = val * (i + 1)
     }
     console.log(`val = ${val}`);
+}
+
+function tanggal() {
+    let tanggal = new Date();
+    console.log(tanggal);
+
+    document.getElementById('tanggalNow').innerHTML = ` Tanggal:  <strong>${tanggal.getDate()} / ${tanggal.getMonth()+1} / ${tanggal.getFullYear()} </strong>`
 }
