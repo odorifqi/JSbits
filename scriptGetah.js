@@ -7,6 +7,7 @@ function sum(obj, obj2) {
         arrint.push(parseInt(i))
     });
 
+
     let sum = arrint.reduce((t, v) => {
         return t + v
     })
@@ -20,5 +21,19 @@ function total() {
     let l = parseInt(document.getElementById('l').innerHTML)
     let m = parseInt(document.getElementById('m').innerHTML)
 
-    document.getElementById('total').innerHTML = h + l + m
+    if (Number.isNaN(h + l + m)) {
+        document.getElementById('total').innerHTML = "Please fill all form!"
+    } else {
+        document.getElementById('total').innerHTML = h + l + m
+
+    }
+}
+
+
+function factorial(f) {
+    let val = 1
+    for (let i = 1; i < (f); i++) {
+        val = val * (i + 1)
+    }
+    console.log(`val = ${val}`);
 }
